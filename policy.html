@@ -1,68 +1,278 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width'>
-    <title>Privacy Policy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码匣 - 隐私政策</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            padding: 1em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
+            min-height: 100vh;
+        }
+
+        .policy-container {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .section-title {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .section-title:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(to bottom, #4f46e5, #7c3aed);
+            border-radius: 2px;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 
-<body>
-    <strong>Privacy Policy</strong>
-    <p>This privacy policy applies to the 密码匣 app (hereby referred to as "Application") for mobile devices that was
-        created by Ping Zhang (hereby referred to as "Service Provider") as a Freemium service. This service is intended
-        for use "AS IS".</p><br><strong>Information Collection and Use</strong>
-    <p>The application does not collect information when you download and use it</p>
-    <p></p><br>
-    <p>The Application does not gather precise information about the location of your mobile device.</p><!----><br>
-    <p>The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.
-    </p><br>
-    <br><strong>Third Party Access</strong>
-    <p>The service provider will not share your information with third parties.</p><!----><br>
+<body class="py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-12 fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">密码匣应用隐私政策</h1>
+            <div class="w-24 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+            <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+                本隐私政策阐述了密码匣应用如何处理您的个人信息。请您仔细阅读以了解我们的数据处理方式。
+            </p>
+        </header>
 
-    <p></p><br><strong>Opt-Out Rights</strong>
-    <p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard
-        uninstall processes as may be available as part of your mobile device or via the mobile application marketplace
-        or network.</p><br><strong>Data Retention Policy</strong>
-    <p>As long as you use this application, the service provider will not retain the data provided by the user, and the
-        data will only be saved on the local keychain.</p>
-    <br><strong>Children</strong>
-    <p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the
-        age of 13.</p>
-    <div><br>
-        <p>The Service Provider does not knowingly collect personally identifiable information from children. The
-            Service Provider encourages all children to never submit any personally identifiable information through the
-            Application and/or Services. The Service Provider encourage parents and legal guardians to monitor their
-            children's Internet usage and to help enforce this Policy by instructing their children never to provide
-            personally identifiable information through the Application and/or Services without their permission. If you
-            have reason to believe that a child has provided personally identifiable information to the Service Provider
-            through the Application and/or Services, please contact the Service Provider
-            <span>(hr@infodragon.com)</span>
-            so that they will be able to take the necessary actions. You must also be at least 16 years of age to
-            consent to the processing of your personally identifiable information in your country (in some countries we
-            may allow your parent or guardian to do so on your behalf).
-        </p>
-    </div><br><strong>Security</strong>
-    <p>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service
-        Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider
-        processes and maintains.</p><br><strong>Changes</strong>
-    <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any
-        changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this
-        Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p><br>
-    <p>This privacy policy is effective as of 2026-02-27</p><br><strong>Your Consent</strong>
-    <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy
-        Policy now and as amended by us.</p><br><strong>Contact Us</strong>
-    <p>If you have any questions regarding privacy while using the Application, or have questions about the practices,
-        please contact the Service Provider via email at hr@infodragon.com.</p>
-    <hr>
-    <p>This privacy policy page was generated by <a href="https://app-privacy-policy-generator.nisrulz.com/"
-            target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a></p>
+        <!-- Main Content -->
+        <main class="bg-white policy-container fade-in">
+            <div class="p-6 sm:p-8">
+                <!-- Introduction Section -->
+                <section class="mb-10">
+                    <h2 class="text-2xl font-semibold text-gray-800 section-title mb-4">政策概述</h2>
+                    <p class="text-gray-700 mb-4">
+                        本隐私政策适用于由Ping Zhang（以下简称"服务提供商"）创建的密码匣iOS移动应用（以下简称"应用"）。
+                        该应用为免费应用，无应用内购买（IAP）、无订阅服务、无广告，以"现状"（AS IS）方式供用户使用。
+                    </p>
+                </section>
+
+                <!-- Information Collection Section -->
+                <section class="mb-10">
+                    <h2 class="text-2xl font-semibold text-gray-800 section-title mb-4">信息收集与使用</h2>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span><strong>无主动信息收集：</strong>本应用不会主动收集、存储、传输您的任何个人信息（包括但不限于标识符、联系人、位置、使用数据等）。所有用户数据（如密码、账户信息）仅存储在iOS设备本地钥匙串（Keychain）中，应用开发者无法访问、获取或同步该等数据。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-3"></i>
+                            <span><strong>位置信息：</strong>应用不会获取移动设备的精确位置信息。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-robot text-purple-500 mt-1 mr-3"></i>
+                            <span><strong>人工智能技术：</strong>应用不使用人工智能（AI）技术处理您的数据或提供功能。</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Third Party Access Section -->
+                <section class="mb-10">
+                    <h2 class="text-2xl font-semibold text-gray-800 section-title mb-4">第三方访问</h2>
+                    <p class="text-gray-700">
+                        服务提供商承诺不将您的信息共享给任何第三方。
+                    </p>
+                </section>
+
+                <!-- Opt-Out Rights Section -->
+                <section class="mb-10">
+                    <h2 class="text-2xl font-semibold text-gray-800 section-title mb-4">退出权利</h2>
+                    <p class="text-gray-700">
+                        您可通过卸载应用轻松停止所有信息收集。卸载方式包括：使用移动设备的标准卸载流程、
+                        通过移动应用商店或网络进行卸载。
+                    </p>
+                </section>
+
+                <!-- Data Retention Policy Section -->
+                <section class="mb-10">
+                    <h2 class="text-2xl font-semibold text-gray-800 section-title mb-4">数据保留政策</h2>
+                    <p class="text-gray-700">
+                        只要您继续使用本应用，服务提供商将仅在必要范围内保留您的数据，
+                        且保留期限不超过提供服务所需的最短时间。所有数据仅保存在本地钥匙串中。
+                    </p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl font-semibold text-gray-800 section-title mb-4">iOS本地数据处理</h2>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-lock text-indigo-500 mt-1 mr-3"></i>
+                            <span><strong>钥匙串存储：</strong>您在应用中录入的所有密码、账户信息均通过iOS系统钥匙串（Keychain）加密存储，仅可由您的设备解锁后访问，开发者无任何权限读取或导出。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-trash-alt text-red-500 mt-1 mr-3"></i>
+                            <span><strong>数据删除：</strong>您可通过以下方式删除本地数据：①在应用内执行“清除所有数据”操作；②卸载应用（iOS系统将自动清理钥匙串中与本应用关联的数据）；③通过iOS“设置-通用-iPhone存储空间”删除应用及关联数据。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-cloud-slash text-blue-500 mt-1 mr-3"></i>
+                            <span><strong>无iCloud同步：</strong>本应用未接入iCloud同步功能，所有数据仅留存于您的本地设备，不会跨设备传输。</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Children Protection Section -->
+                <section class="mb-10">
+                    <h2 class="text-2xl font-semibold text-gray-800 section-title mb-4">儿童保护</h2>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-child text-yellow-500 mt-1 mr-3"></i>
+                            <span>服务提供商不会利用本应用故意收集13岁以下儿童的数据或向其进行营销。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-shield-alt text-red-500 mt-1 mr-3"></i>
+                            <span>服务提供商不会故意收集儿童的个人身份信息。服务提供商鼓励所有儿童切勿通过本应用或相关服务提交任何个人身份信息。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-users text-indigo-500 mt-1 mr-3"></i>
+                            <span>服务提供商建议家长和法定监护人监督儿童的互联网使用情况，协助执行本政策，指导儿童在未经家长或监护人许可的情况下，切勿通过本应用或相关服务提供个人身份信息。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-exclamation-triangle text-orange-500 mt-1 mr-3"></i>
+                            <span>如果您有理由相信儿童已通过本应用或相关服务向服务提供商提供了个人身份信息，请联系服务提供商以便其采取必要措施。您必须年满16周岁才能在您所在国家同意处理您的个人身份信息。<br>
+                                <strong>iOS适配补充：</strong>本应用未接入Apple
+                                Kids功能，不面向13岁以下儿童设计；若检测到未成年人使用，本应用不会收集任何数据，并建议监护人监督使用行为。</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Security Section -->
+                <section class="mb-10">
+                    <h2 class="text-2xl font-semibold text-gray-800 section-title mb-4">安全保障</h2>
+                    <p class="text-gray-700">
+                        服务提供商高度重视保护您的信息保密性。服务提供商提供物理、电子和程序上的安全保障措施，
+                        以保护其处理和维护的信息。<br>
+                        <strong>iOS安全适配：</strong>本应用遵循iOS系统安全规范，仅申请必要的系统权限（无权限申请），通过iOS沙盒机制隔离应用数据，防止第三方应用访问；本地数据加密遵循AES-256标准，与iOS系统安全等级一致。
+                    </p>
+                </section>
+
+                <!-- Policy Changes Section -->
+                <section class="mb-10">
+                    <h2 class="text-2xl font-semibold text-gray-800 section-title mb-4">政策变更</h2>
+                    <p class="text-gray-700">
+                        本隐私政策可能根据Apple App Store政策要求、法律法规更新或应用功能调整不时修订。<br>
+                        1. 重大变更通知：若政策涉及数据收集范围、数据存储方式、第三方共享等核心内容变更，我们将通过应用内弹窗、邮件（若您主动提供）通知您，并给予至少7天的异议期；<br>
+                        2. 一般变更通知：非核心变更将通过本页面更新，并标注“最后修订日期”；<br>
+                        3. 您继续使用本应用即视为同意修订后的隐私政策；若您不同意，可卸载应用终止使用。<br>
+                        本隐私政策首次生效日期：2026年2月27日；最后修订日期：2026年2月27日。
+                    </p>
+                </section>
+
+                <!-- Consent Section -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold text-gray-800 section-title mb-4">您的同意</h2>
+                    <p class="text-gray-700">
+                        通过使用本应用，您即同意按照本隐私政策（包括我们可能进行的修订）处理您的信息。
+                    </p>
+                </section>
+
+                <!-- Contact Section -->
+                <section class="border-t pt-8">
+                    <h2 class="text-2xl font-semibold text-gray-800 section-title mb-6">联系我们</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div
+                            class="contact-card bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-xl transition-all duration-300 border border-indigo-100">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-envelope text-indigo-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-800">电子邮件</h3>
+                            </div>
+                            <p class="text-gray-700 mb-2">如有任何隐私相关问题，请发送邮件至:</p>
+                            <a href="mailto:hr@infodragon.com"
+                                class="text-indigo-600 font-medium hover:text-indigo-800 transition-colors">
+                                hr@infodragon.com
+                            </a>
+                        </div>
+
+                        <div
+                            class="contact-card bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl transition-all duration-300 border border-blue-100">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-info-circle text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-800">更多信息</h3>
+                            </div>
+                            <p class="text-gray-700 mb-2">了解更多关于我们数据处理实践的信息</p>
+                            <p class="text-sm text-gray-500 mt-2">
+                                <i class="fas fa-apple mr-2"></i>iOS版本适配：支持iOS 14.0及以上系统
+                            </p>
+                            <p class="text-sm text-gray-500 mt-1">
+                                <i class="fas fa-calendar-alt mr-2"></i>政策生效日期: 实际发布前的日期
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-gray-600">
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 mb-4">
+                <p>© 2026 密码匣应用. 版权所有.</p>
+                <p class="hidden sm:block">|</p>
+                <p>服务提供商: Ping Zhang</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Add scroll animation effect
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeIn 0.8s ease-out forwards';
+                        entry.target.style.opacity = '1';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 
 </html>
